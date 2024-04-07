@@ -1,15 +1,24 @@
 /* HomePage.css */
 .home {
-    text-align: center; /* Centering the text */
-    padding: 20px;
-  }
-  
-  .home h2 {
-    color: #007bff; /* Using the same blue for a cohesive look */
-    margin-bottom: 20px; /* Adding some space below the heading */
-  }
-  
-  .home p {
-    color: #333; /* Dark gray for text to ensure readability */
-  }
-  
+  text-align: center; /* Centering the text */
+  padding: 50px;
+  background-color: rgba(18, 18, 18, 0.5); /* Dark background with translucency */
+  color: #E0E0E0; /* Light grey text for contrast */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.home h2 {
+  color: #FFFFFF; /* White for main headings for higher contrast */
+  margin-bottom: 30px; /* Increasing space below the heading for better layout */
+  font-size: 2.5em; /* Larger font size for headings */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Text shadow for depth */
+}
+
+.home p {
+  color: #BDBDBD; /* Lighter grey for paragraph to ensure readability */
+  font-size: 1.2em; /* Slightly larger font size for body text */
+  max-width: 800px; /* Max width for better reading experience */
+  margin: auto; /* Center align the paragraph container */
+  line-height: 1.6; /* Improved line height for readability */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Subtle text shadow for depth */
+}

@@ -221,8 +221,6 @@ def process_video(self, filename):
         # SupplyWriter(filename, out_file, 0.504857167676091).run(frames, scores, boxes)
 
         ##----------------------------##
-        import time
-        time.sleep(7)
         # Assuming 'uploaded_file' is a valid endpoint in your Flask app
         processed_video_url = url_for('uploaded_file', filename=filename, _external=True)
         return processed_video_url
@@ -235,6 +233,8 @@ def serve():
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
     print(filename)
+    import time
+    time.sleep(3)
     return send_from_directory(app.config['OUTPUT_FOLDER'], filename)
 
 

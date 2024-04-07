@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2024 MyApp. All rights reserved.</p>
+      <p>© 2024 FrameForge AI. All rights reserved.</p>
     </footer>
   );
 }

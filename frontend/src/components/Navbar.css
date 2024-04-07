@@ -1,30 +1,43 @@
 /* Navbar.css */
 .navbar {
-    background-color: #007bff; /* A nice shade of blue */
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-links {
-    list-style: none;
-    padding: 0;
-  }
-  
+  background-color: rgba(18, 18, 18, 0.3); /* Translucent dark background similar to the footer */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds subtle shadow for depth */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Aligns links horizontally */
+  align-items: center; /* Centers the links vertically within the navbar */
+  margin: 0; /* Remove default margins */
+}
+
+.nav-links li {
+  margin-left: 20px; /* Space between nav links */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1e90ff; /* Highlight color on hover */
+}
+
+/* For a responsive navbar, you may want to add media queries */
+@media (max-width: 768px) {
   .nav-links li {
-    display: inline;
-    margin-left: 20px;
+      margin-left: 10px; /* Less space between nav links on smaller screens */
   }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+
+  .navbar {
+      padding: 10px; /* Less padding on smaller screens */
   }
-  
-  .nav-links a:hover {
-    color: #ddd; /* Lighten the link color on hover */
-  }
-  
+}

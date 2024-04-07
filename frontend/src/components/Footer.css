@@ -1,13 +1,26 @@
 /* Footer.css */
 .footer {
-    background-color: #007bff; /* Matching the navbar for consistency */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px; /* Ensure some space above the footer */
-  }
-  
-  .footer p {
-    margin: 0; /* Remove default margins for a cleaner look */
-  }
-  
+  background-color: rgba(18, 18, 18, 0.3); /* Translucent dark background */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds subtle shadow for depth */
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* If you have links in your footer, style them like this: */
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #1e90ff; /* Highlight color on hover */
+}
+
+/* Responsive adjustments can be added as needed */
