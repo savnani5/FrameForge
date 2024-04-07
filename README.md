@@ -1,4 +1,4 @@
-# Deepfake Detection
+# FrameForge AI
 
 ## How to run? 
 
