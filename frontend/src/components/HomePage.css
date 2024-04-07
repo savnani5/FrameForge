@@ -1,0 +1,15 @@
+/* HomePage.css */
+.home {
+    text-align: center; /* Centering the text */
+    padding: 20px;
+  }
+  
+  .home h2 {
+    color: #007bff; /* Using the same blue for a cohesive look */
+    margin-bottom: 20px; /* Adding some space below the heading */
+  }
+  
+  .home p {
+    color: #333; /* Dark gray for text to ensure readability */
+  }
+  
