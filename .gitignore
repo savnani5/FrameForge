@@ -1,8 +1,7 @@
 # Ignore specific backend directories
 backend/checkpoints/
-backend/examples/
+backend/examples/*.pth
 backend/model/
-backend/output/
 backend/uploads/
 
 # Ignore Python cache and compiled files
