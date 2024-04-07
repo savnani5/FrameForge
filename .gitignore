@@ -1,9 +1,26 @@
-# frontend
-frontend/node_modules
+# Ignore specific backend directories
+backend/checkpoints/
+backend/examples/
+backend/model/
+backend/output/
+backend/uploads/
+
+# Ignore Python cache and compiled files
+*.py[cod]
+*.pyc.*
+*$py.class
+__pycache__/
+*.class
+
+# Ignore VSCode settings
+.vscode/
+
+# Frontend specific files and directories to ignore
+frontend/node_modules/
 frontend/.pnp
 frontend/.pnp.js
-frontend/coverage
-frontend/build
+frontend/coverage/
+frontend/build/
 frontend/.DS_Store
 frontend/.env.local
 frontend/.env.development.local
@@ -12,14 +29,3 @@ frontend/.env.production.local
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
-
-# backend
-backend/checkpoints/
-*.py[cod]
-*.pyc.*
-*$py.class
-.vscode/
-backend/output/
-backend/uploads/
-backend/examples/*.pth
-*/__pycache__/
