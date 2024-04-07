@@ -2,6 +2,7 @@
 backend/checkpoints/
 backend/examples/*.pth
 backend/uploads/
+backend/input/
 
 # Ignore Python cache and compiled files
 *.py[cod]

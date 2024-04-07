@@ -59,6 +59,8 @@ RNG_SEED: 0
 OUTPUT_DIR: .
 """
 
+# import sys
+# sys.path.append('/Users/parassavnani/Desktop/dev/deepfake-detection/backend')
 
 from slowfast.models.video_model_builder import ResNet as ResNetOri
 from slowfast.config.defaults import get_cfg
