@@ -14,12 +14,12 @@ frontend/yarn-debug.log*
 frontend/yarn-error.log*
 
 # backend
-backend/FTCN/checkpoints/
+backend/checkpoints/
 *.py[cod]
 *.pyc.*
 *$py.class
 .vscode/
-backend/FTCN/output/
-backend/FTCN/uploads/
-backend/FTCN/examples/*.pth
+backend/output/
+backend/uploads/
+backend/examples/*.pth
 */__pycache__/
