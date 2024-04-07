@@ -1,6 +1,40 @@
 # Deepfake Detection
 
-## Abstract
+## How to run? 
+
+1) Clone the repo and download pretrained weights
+```
+git clone https://github.com/savnani5/deepfake-detection.git
+```
+Download `FTCN+TT` model trained on FF++ from [here](https://github.com/yinglinzheng/FTCN/releases/download/weights/ftcn_tt.pth) and place it under `./checkpoints` folder in backend
+
+2) Install dependencies
+```
+pip install -r requirements.txt
+```
+3) Run Flask server in backend
+```
+flask run
+```
+4) Run Redis Server
+```
+brew services start redis
+```
+5) Run Celery in backend
+```
+celery -A app.celery worker --loglevel=info
+```
+6) Build the React App
+```
+npm run build
+```
+7) Run React App
+```
+npm start
+```
+
+
+## Algorithm Abstract
 Although current face manipulation techniques achieve impressive performance regarding quality and controllability, they are struggling to generate temporal coherent face videos. In this work, we explore to take full advantage of the temporal coherence for video face forgery detection. To achieve this, we propose a novel end-to-end framework, which consists of two major stages. The first stage is a fully temporal convolution network (FTCN). The key insight of FTCN is to reduce the spatial convolution kernel size to 1, while maintaining the temporal convolution kernel size unchanged. We surprisingly find this special design can benefit the model for extracting the temporal features as well as improve the generalization capability. The second stage is a Temporal Transformer network, which aims to explore the long-term temporal coherence. The proposed framework is general and flexible, which can be directly trained from scratch without any pre-training models or external datasets. Extensive experiments show that our framework outperforms existing methods and remains effective when applied to detect new sorts of face forgery videos.
 
 
@@ -9,14 +43,10 @@ First setup python environment with pytorch 1.4.0 installed, **it's highly recom
 
 then install dependencies for the experiment:
 
-```
-pip install -r requirements.txt
-```
+
 
 # Test
-
 ## Inference Using Pretrained Model on Raw Video
-Download `FTCN+TT` model trained on FF++ from [here](https://github.com/yinglinzheng/FTCN/releases/download/weights/ftcn_tt.pth) and place it under `./checkpoints` folder
 ```bash
 python test_on_raw_video.py examples/shining.mp4 output
 ```
