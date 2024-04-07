@@ -1,16 +1,23 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-}
-
-.App {
+.video-upload-container {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-main {
-  flex: 1;
-  padding: 20px;
+.video-section {
+  flex-basis: 45%;
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  max-width: 400px; /* Adjust based on your preference */
+  margin-top: 10px;
+}
+
+.processing {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
 }
