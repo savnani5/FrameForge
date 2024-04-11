@@ -48,7 +48,7 @@ then install dependencies for the experiment:
 # Test
 ## Inference Using Pretrained Model on Raw Video
 ```bash
-python test_on_raw_video.py examples/shining.mp4 output
+python backend/test_on_raw_video.py examples/shining.mp4 output
 ```
 the output will be a video under folder `output` named `shining.avi`
 
